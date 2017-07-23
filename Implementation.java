@@ -5,14 +5,29 @@
 */
 
 import java.util.Scanner;
+import java.util.*;
 
 public class Implementation{
   public static void main(String[] args){
+    HashMap table = new HashMap<ArrayList<String>, Integer>();
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Location, Fish Species, Weather, Temperature: ");
+    System.out.print("Fish Species, Weather, Temperature, Water color: ");
     while (scanner.hasNext()){
       String data = scanner.nextLine();
-      System.out.println("You typed: " + data);
+      ArrayList<String> list = new ArrayList<String>();
+      while (data.contains(",")){
+        list.add(data.substring(0,data.indexOf(",")));
+        data = data.substring(data.indexOf(",")+2);
+      }
+      list.add(data);
+      System.out.println(table.get(list));
+      if(table.get(list) == null){
+        table.put(list,1);
+      }else{
+        int i = (Integer) table.get(list);
+        table.put(list, i + 1);
+      }
+      System.out.println(table.toString());
     }
   }
 }
