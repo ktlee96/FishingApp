@@ -36,4 +36,13 @@ public class Implementation{
       System.out.println(table.toString());
     }
   }
+
+//Create method that sorts and updates hashMap<String, Integer>
+
+//Create method that adds new "Fish Species, Weather, Temperature, Water color, Bait: \n"
+
+//Create method that gets successful bait, given "Species, Weather, Temperature, Water color"
+
+//Create method that deletes incorrect/misspelled <Key,Value>
+
 }
