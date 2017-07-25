@@ -1,7 +1,7 @@
 /*
  *Hee Sung Kim and Kyung Taek Lee
  *Fishing App implementation
- *7/22/2017
+ *7/24/2017
 */
 
 import java.util.Scanner;
