@@ -1,7 +1,7 @@
 /*
  *Hee Sung Kim and Kyung Taek Lee
  *Fishing App implementation
- *7/24/2017
+ *7/25/2017
 */
 
 import java.util.Scanner;
@@ -9,8 +9,8 @@ import java.util.*;
 
 public class Implementation{
 
-//Create method that sorts and updates hashMap<String, Integer>
-
+//Input: String conditions, String bait, HashMap table
+//Output: void
 //method that adds new "Fish Species, Weather, Temperature, Water color, Bait: \n"
   public static void add(String conditions, String bait, HashMap table){
     if(table.get(conditions) == null){
@@ -32,6 +32,12 @@ public class Implementation{
     }
   }
 
+//Input: HashMap table
+//Output: void
+//Create method that sorts and updates hashMap<String, Integer>
+
+//Input: String conditions, HashMap table
+//Output: String bait
 //Create method that gets successful bait, given "Species, Weather, Temperature, Water color"
 
 //Create method that deletes incorrect/misspelled <Key,Value>
